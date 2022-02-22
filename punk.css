@@ -1,6 +1,6 @@
 html {
-  --dag: #f79c22;
-  --natt: #132;
+  --dag: tomato;
+  --natt: #030303;
   --vind: #dbdbdb;
 }
 
@@ -23,14 +23,6 @@ html {
     background: var(--vind);
     color: var(--natt);
   }
-}
-
-@media (prefers-contrast: less) {
-  html { --dag: #f66622; }
-}
-
-@media (prefers-contrast: more) {
-  html { --natt: #022200; }
 }
 
 html {
