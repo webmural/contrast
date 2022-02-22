@@ -47,6 +47,7 @@ body {
 article {
   display: flex;
   flex-flow: column;
+  justify-content: center;
   margin: auto;
 }
 
@@ -56,22 +57,33 @@ article {
 }
 
 .opener {
+  display: flex;
+  flex-flow: column;
   font-size: 1.61rem;
   font-weight: 600;
   margin: 0;
-  margin-block-start: 14vh;
   min-height: 100vh;
   text-align: end;
 }
 
-.about {
-  max-width: 22em;
-  line-height: 1.61;
-}
-
 .line {
   display: block;
+  margin: 1ex;
   padding: 1em;
   padding-block: 1ex;
   border-radius: 2em;
+}
+
+.line:first-of-type {
+  margin-block-start: auto;
+}
+
+.line:last-of-type {
+  margin-block-end: auto;
+}
+
+.about {
+  margin: 1rem;
+  max-width: 22em;
+  line-height: 1.61;
 }
